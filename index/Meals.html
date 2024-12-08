@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+	<meta charset="UTF-8">
+    <title>FitFlex - Meals</title>
+    <link rel="stylesheet" href="./css/css1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<style>
+
+
+.heading{
+	margin-top:100px;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	color: #fff;
+	padding: 20px;
+}
+
+.items{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	padding: 30px 20px;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	color: #fff;
+	margin-left: 10%;
+	margin-right: 7%;
+}
+.item img{
+	width: 100%;
+	height:300px;
+	object-fit: cover;
+	cursor: pointer;
+    transitions: 0.2s ease;
+	color: #fff;
+}
+.item img:hover{
+	transform: scale(1.04);
+	color: #fff;
+}
+.item h4{
+	padding: 5px;
+	text-align: center;
+	color: #fff;
+}
+.item button{
+	padding: 5px 30px;
+	border:none;
+	outline:none;
+	background-color: tomato;
+	color: white;
+	cursor: pointer;
+	border-radius:4px;
+	font-size: 20px;
+	display:block;
+	margin: 0 auto;
+	transition: 0,2 all;
+}
+.item button:hover{
+	transform: scale(1.04)
+	color: #fff;
+}
+@media screen and (max-width: 1000px){
+	.items{
+		grid-template-columns:repeat(2,1fr);
+	}
+}
+@media screen and (max-width: 768px){
+	.items{
+		grid-template-columns:repeat(1,1fr);
+	}
+}
+</style>
+	 
+	 
+	 
+	 
+</head>
+<body background = "./images/background.png">
+ 
+     <header class="header">
+        <a href="#" class="logo">
+            <i class="fas fa-heartbeat"></i>FitFlex
+        </a>
+		
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="workouts.html">Workouts</a>
+			<a href="Meals.html">Meals</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>              
+       
+	<div class="heading">
+	  <h1>Cook With Us!</h1>
+	</div>  
+     <section class="items">
+	   <div class="item">
+	     <img src="./images/food1.webp"alt="">
+	    <h4>Salmon Bowl</h4>
+	    <button onclick = "window.location.href = './recipe1.html'; " class ="btn">Recipe</button>
+	  </div>
+	  
+	   <div class="item">
+	     <img src="./images/food2.webp"alt="">
+	    <h4>Tamarind prawn Curry</h4>
+	    <button onclick = "window.location.href = './recipe2.html'; " class ="btn">Recipe</button>
+	  </div>
+	   <div class="item">
+	     <img src="./images/food5.jpg"alt="">
+	    <h4>Red lentil soup</h4>
+	    <button onclick = "window.location.href = './recipe3.html'; " class ="btn">Recipe</button>
+	  </div>
+	   <div class="item">
+	     <img src="./images/food4.webp"alt="">
+	    <h4>Healthy Chicken stir-fry</h4>
+	    <button onclick = "window.location.href = './recipe4.html'; " class ="btn">Recipe</button>
+	  </div>
+	   <div class="item">
+	     <img src="./images/food6.webp"alt="">
+	    <h4>Spinach, sweet potato & lentil dhal</h4>
+	    <button onclick = "window.location.href = './recipe5.html'; " class ="btn">Recipe</button>
+	  </div>
+	   
+	   <div class="item">
+	     <img src="./images/food3.webp"alt="">
+	    <h4>Chinese chicken curry</h4>
+	    <button onclick = "window.location.href = './recipe6.html'; " class ="btn">Recipe</button>
+		</div>
+	  </div>
+	   <div class="item">
+	     <img src="./images/food7.webp"alt="">
+	    <h4>Healthy beef chow mein</h4>
+	    <button onclick = "window.location.href = './recipe7.html'; " class ="btn">Recipe</button>
+		</div>
+		 <div class="item">
+	     <img src="./images/food8.webp"alt="">
+	    <h4>Easy lentil curry</h4>
+	    <button onclick = "window.location.href = './recipe8.html'; " class ="btn">Recipe</button>
+		</div>
+		 <div class="item">
+	     <img src="./images/food9.webp"alt="">
+	    <h4>Jerk chicken burger</h4>
+	    <button onclick = "window.location.href = './recipe9.html'; " class ="btn">Recipe</button>
+		
+	  </div>
+		
+	  </div>
+	  </div>
+	  </div>
+	</section>
+	 </body>
+</html>
